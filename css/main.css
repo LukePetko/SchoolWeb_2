@@ -5,11 +5,17 @@ body
   box-sizing: content-box;
 
   font-family: 'Roboto', sans-serif;
-  font-weight: 50;
+  font-weight: 100;
 }
 
 /************NAČÍTAVANIE**************/
 #content
+{
+  display: none;
+  animation: abottom 2s;
+}
+
+#map
 {
   display: none;
   animation: abottom 2s;
