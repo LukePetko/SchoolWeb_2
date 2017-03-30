@@ -6,10 +6,20 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/png" href="images/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <script>
+      var timerStart = Date.now()
+    </script>
   </head>
-  <body>
+  <body onload="load()">
+    <div id="loading">
+      <div id="loader1"></div>
+      <div id="loader2"></div>
+      <div id="loader3"></div>
+      <div id="loader_logo"></div>
+    </div>
 
-    <header>
+    <div id="content">
+    <header id="header">
       <div>
         <img class="header_img" src="images/logo.svg" alt="uController logo">
         <h1 class="header_text"><span>ultimate </span><span>Controller</span></h1>
@@ -17,18 +27,30 @@
     </header>
 
     <nav class="nav_1">
-      <a href="#" class="nav_image_1"><img src="images/logo.svg" alt="menu_logo"></a>
+      <a href="#header" class="nav_image_1"><img src="images/logo.svg" alt="menu_logo"></a>
       <div class="linky">
-        <a href="#">Domov</a>
+        <a href="#header">Domov</a>
         <a href="#o_nas_anchor">O nás</a>
         <a href="#ovladac_anchor">Ovládač</a>
-        <a>Aplikácia</a>
-        <a>Kto sme</a>
+        <a href="#aplikacia_anchor">Aplikácia</a>
+        <a href="#my_anchor">Kto sme</a>
       </div>
     </nav>
     <div id="o_nas_anchor"></div>
     <div id="o_nas_vsetko">
       <div id="o_nas">
+        <h3>O nás</h3>
+        <p>
+          Auctor mattis viverra commodo feugiat risus, felis posuere erat. Nisl nascetur pharetra feugiat nec, conubia euismod fusce, taciti posuere interdum. Cras lectus aenean orci ligula dis, nostra sed pulvinar. Dictumst vivamus proin per enim pellentesque, augue phasellus et. Auctor mattis viverra commodo feugiat risus, felis posuere erat. Nisl nascetur pharetra feugiat nec, conubia euismod fusce, taciti posuere interdum. Cras lectus aenean orci ligula dis, nostra sed pulvinar. Dictums vivamus proin per enim pellentesque, augue phasellus et.
+        </p>
+      </div>
+    </div>
+
+    <div id="content_vsetko">
+      <div id="ovladac_anchor"></div>
+      <div id="ovladac"></div>
+      <div class="content_text">
+        <h3>Ovládač</h3>
         <p>
           Auctor mattis viverra commodo feugiat risus, felis posuere erat. Nisl nascetur pharetra feugiat nec, conubia euismod fusce, taciti posuere interdum. Cras lectus aenean orci ligula dis, nostra sed pulvinar. Dictumst vivamus proin per enim pellentesque, augue phasellus et. Auctor mattis viverra commodo feugiat risus, felis posuere erat. Nisl nascetur pharetra feugiat nec, conubia euismod fusce, taciti posuere interdum. Cras lectus aenean orci ligula dis, nostra sed pulvinar. Dictums vivamus proin per enim pellentesque, augue phasellus et.
         </p>
@@ -40,26 +62,75 @@
         <img src="images/schopnosti/hudba.png" alt="hudba">
         <img src="images/schopnosti/ziarovka.png" alt="ziarovka">
       </div>
+      <div id="aplikacia_anchor"></div>
+      <div id="aplikacia">
+        <h3>Aplikácia</h3>
+        <img src="images/aplikacia.png" alt="screenshot aplikácie">
+        <p>Auctor mattis viverra commodo feugiat risus, felis posuere erat. Nisl nascetur pharetra feugiat nec, conubia euismod fusce, taciti posuere interdum. Cras lectus aenean orci ligula dis, nostra sed pulvinar. Dictumst vivamus proin per enim pellentesque, augue phasellus et. Auctor mattis viverra commodo feugiat risus, felis posuere erat. Nisl nascetur pharetra feugiat nec, conubia euismod fusce, taciti posuere interdum. Cras lectus aenean orci ligula dis, nostra sed pulvinar. Dictums vivamus proin per enim pellentesque, augue phasellus et.</p>
+      </div>
+      <div id="app_photo"></div>
     </div>
 
-    <div id="ovladac_anchor"></div>
-    <div id="content_vsetko">
-      <div id="ovladac"></div>
-      <div class="content_text">
-        <p>
-          Auctor mattis viverra commodo feugiat risus, felis posuere erat. Nisl nascetur pharetra feugiat nec, conubia euismod fusce, taciti posuere interdum. Cras lectus aenean orci ligula dis, nostra sed pulvinar. Dictumst vivamus proin per enim pellentesque, augue phasellus et. Auctor mattis viverra commodo feugiat risus, felis posuere erat. Nisl nascetur pharetra feugiat nec, conubia euismod fusce, taciti posuere interdum. Cras lectus aenean orci ligula dis, nostra sed pulvinar. Dictums vivamus proin per enim pellentesque, augue phasellus et.
-        </p>
+    <div id="kontakt">
+      <div id="my_anchor"></div>
+      <div class="kto_sme">
+        <h3>Kto sme</h3>
+        <div class="Tibor">
+          <img src="images/my.png" alt="placeholder nás">
+          <h4>Tibor Manas</h4>
+          <h6>CEO</h6>
+        </div>
+        <div class="Lukas">
+          <img src="images/my.png" alt="placeholder nás">
+          <h4>Lukáš Peťko</h4>
+          <h6>Web design</h6>
+        </div>
+        <div class="Tomas">
+          <img src="images/my.png" alt="placeholder nás">
+          <h4>Tomáš Letanovský</h4>
+          <h6>Web design</h6>
+        </div>
       </div>
+
+      <h5>Podporte nás na</h5>
+      <div class="kickstarter">
+        <img src="images/Kickstarter.png" alt="kickstarter">
+      </div>
+
+      <h5>Sledujte nás na</h5>
+      <div class="social">
+        <div class="facebook"></div>
+        <div class="twitter"></div>
+        <div class="spotify"></div>
+      </div>
+
+      <h5>Napíšte nám na</h5>
+      <div class="email">
+        <div>
+          <a href="mailto:noreply.ucontroller@gmail.com">ucontroller@gmail.com</a>
+          <a href="tel:+421901-234-567">0901 234 567</a>
+        </div>
+      </div>
+      <div class="formular">
+        <form>
+          <label for="email">Email</label>
+          <input type="text" name="email" placeholder="váš email">
+          <input type="submit" value="Send">
+        </form>
+      </div>
+      <div class="mapa">
+        <h5>Nájdete nás</h5>
+        <div id="map"></div>
+      </div>
+    </div>
     </div>
 
     <script src="js/jquery-2.2.4.min.js"> </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTHB_DcKMgQj3bWqKDTV67GEkm0chBxV0&callback=initMap">
-    </script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/jquery.localScroll.min.js"></script>
     <script src="js/function.js"></script>
     <script src="js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTHB_DcKMgQj3bWqKDTV67GEkm0chBxV0&callback=initMap"></script>
   </body>
 </html>
