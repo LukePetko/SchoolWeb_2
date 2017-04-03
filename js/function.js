@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 });
 
-$("nav").localScroll({duration : 800});
+$("nav, footer").localScroll({duration : 800});
 $("header div").fadeOut(0).delay(4000 + Date.now() - timerStart).fadeIn(2000);
 
 var loadVar;
@@ -42,4 +42,5 @@ function showPage() {
   document.getElementById("loading").style.display = "none";
   document.getElementById("content").style.display = "block";
   document.getElementById("map").style.display = "block";
+  document.getElementById("pata").style.display = "block";
 }

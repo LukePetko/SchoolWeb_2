@@ -9,17 +9,12 @@ body
 }
 
 /************NAČÍTAVANIE**************/
-#content
+#content, #map, footer
 {
   display: none;
   animation: abottom 2s;
 }
 
-#map
-{
-  display: none;
-  animation: abottom 2s;
-}
 
 #loader1, #loader2, #loader3
 {
@@ -72,7 +67,7 @@ body
   left: 50%;
   top: 50%;
   margin-left: -37.5px;
-  margin-top: -350px;
+  margin-top: -300px;
 }
 
 @keyframes spin {
@@ -136,13 +131,13 @@ header img
   filter: blur(0px);
 }
 
-header h1
+header p
 {
   font-size: 85px;
   filter: blur(0px);
 }
 
-header h1 span:nth-child(2)
+header p span:nth-child(2)
 {
   color: #0FFCC7;
 }
@@ -261,13 +256,9 @@ h3
   font-size: 25px;
 }
 
-@media (max-width: 1400px) {
-
-  #o_nas, .content_text, #aplikacia
-  {
-    width: 80%;
-  }
-
+.content_text span
+{
+  color: #0FFCC7;
 }
 
 #o_nas_anchor
@@ -324,14 +315,14 @@ h3
 }
 #aplikacia img
 {
-  width: 350px;
+  width: 29%;
   float: left;
 }
 
 #aplikacia p
 {
-  width: 750px;
-  margin-left: 100px;
+  width: 62.5%;
+  margin-left: 8.333333%;
   float: left;
   font-size: 24px;
 }
@@ -374,19 +365,29 @@ h5
   width: 1200px;
   height: 100%;
   margin: auto;
-  /*border: 3px solid red;*/
+}
+
+.kto_sme
+{
+  clear: both;
 }
 
 .kto_sme div
 {
-  width: 300px;
+  margin-left: 5.70%;
+  width: 25%;
   float: left;
-  padding: 50px;
+  padding: 0.4111111%;
+}
+
+.kto_sme div:first
+{
+  margin-left: 0%;
 }
 
 .kto_sme div img
 {
-width: 300px;
+  width: 100%;
 }
 
 .kto_sme div h4
@@ -406,6 +407,7 @@ width: 300px;
 
 h5
 {
+  clear: both;
   padding-top: 100px;
 }
 
@@ -422,7 +424,7 @@ h5:first-of-type
 .kickstarter img
 {
   display: block;
-  width: 1000px;
+  width: 83.33333333333333%;
   margin: auto;
 }
 
@@ -539,6 +541,7 @@ input[type = text]
   border-bottom: 2px solid black;
 
   font-size: 18px;
+  transition: all 0.5s ease-in-out;
 }
 
 input[type = text]:focus
@@ -555,8 +558,7 @@ input[type = submit]
 
   background-color: white;
 
-  border: 2px solid black;
-  border-radius: 5%;
+  border: 1px solid black;
 
   color: black;
   font-size: 14px;
@@ -566,9 +568,9 @@ input[type = submit]
 
 input[type = submit]:hover
 {
-  background-color: #0FFCC7;
+  border: 1px solid #0FFCC7;
 
-  color: black;
+  color: #0FFCC7;
 
   transition: all 0.5s ease-in-out;
   cursor: pointer;
@@ -581,9 +583,71 @@ input[type = submit]:hover
 
 #map
 {
-  border: 3px solid red;
-  width: 1000px;
+  width: 1200px;
   height: 500px;
   margin: auto;
-  z-index: 9999;
+}
+
+footer
+{
+  margin-top: 100px;
+  height: 200px;
+  background-color: black;
+  color: white;
+}
+
+footer a
+{
+  color: white;
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 50px;
+  padding-top: 50px;
+  text-decoration: none;
+}
+
+footer a:visited
+{
+  color: white;
+}
+
+footer p
+{
+  position: relative;
+  bottom: -40px;
+  right: 20px;
+  float: right;
+}
+
+@media (max-width: 1400) {
+
+  #kontakt, #map
+  {
+    width: 80%
+  }
+
+}
+
+@media (max-width: 1279px) {
+
+  #o_nas, .content_text, #aplikacia
+  {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  #schopnosti
+  {
+    display: none;
+  }
+
+  #aplikacia
+  {
+    margin-top: -100px;
+  }
+
 }

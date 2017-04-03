@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="sk">
   <head>
     <meta charset="utf-8">
     <title>uController</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/png" href="images/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
-    <script>
-      var timerStart = Date.now()
-    </script>
+    <script>var timerStart = Date.now()</script>
   </head>
   <body onload="load()">
     <div id="loading">
@@ -22,7 +20,7 @@
     <header id="header">
       <div>
         <img class="header_img" src="images/logo.svg" alt="uController logo">
-        <h1 class="header_text"><span>ultimate </span><span>Controller</span></h1>
+        <p class="header_text"><span>ultimate </span><span>Controller</span></p>
       </div>
     </header>
 
@@ -41,7 +39,7 @@
       <div id="o_nas">
         <h3>O nás</h3>
         <p>
-          Auctor mattis viverra commodo feugiat risus, felis posuere erat. Nisl nascetur pharetra feugiat nec, conubia euismod fusce, taciti posuere interdum. Cras lectus aenean orci ligula dis, nostra sed pulvinar. Dictumst vivamus proin per enim pellentesque, augue phasellus et. Auctor mattis viverra commodo feugiat risus, felis posuere erat. Nisl nascetur pharetra feugiat nec, conubia euismod fusce, taciti posuere interdum. Cras lectus aenean orci ligula dis, nostra sed pulvinar. Dictums vivamus proin per enim pellentesque, augue phasellus et.
+          Sme firma špecializovaná na tvorbu a vývoj ovládačov pre moderné domácnosti. Všetci študujeme na bratislavskom Gymnáziu Jura Hronca. Celý náš nápad vznikol v roku 2014 ako malá garážová firma. Naším cieľom je aby sa náš produkt dostal do bežných domácností najneskôr do roku 2019. Preto sme pred nedávnom začali našu kampaň na kickstarteri. Veríme, že s dostatkom podpory sa nám podarí náš plán i zrealizovať. Pre tieto účely sme si vytvorili túto stránku. Veríme, že sa Vám bude páčiť a podporíte nás.
         </p>
       </div>
     </div>
@@ -52,7 +50,7 @@
       <div class="content_text">
         <h3>Ovládač</h3>
         <p>
-          Auctor mattis viverra commodo feugiat risus, felis posuere erat. Nisl nascetur pharetra feugiat nec, conubia euismod fusce, taciti posuere interdum. Cras lectus aenean orci ligula dis, nostra sed pulvinar. Dictumst vivamus proin per enim pellentesque, augue phasellus et. Auctor mattis viverra commodo feugiat risus, felis posuere erat. Nisl nascetur pharetra feugiat nec, conubia euismod fusce, taciti posuere interdum. Cras lectus aenean orci ligula dis, nostra sed pulvinar. Dictums vivamus proin per enim pellentesque, augue phasellus et.
+          Využitie nášho ovládača je takmer neobmedzené. môžete s ním ovládať veľa vecí vo vašej domácnosti! Od zapínania svetiel, cez zapínania rádia, televízie a počítača, až po otváranie dverí a podobne. Ale tým to nekončí. Ak si už televízor, rádio alebo  hocijaké iné zariadenie zapnete, môžte ho ním rovno aj ovládať. Je dobrého ergonomického tvaru, ktorý bol navhrnutý našimi expertmi. Sme si istý, že Vám padne do ruky! Má 3 tlačidlá a špecialne navrhnutý dotykový touchpad pre Vaše pohodlie. Bude sa vyrábať v rôznych farebných kombináciach. Doprajte si ho v šedej alebo v našom odtieni <span>#0FFCC7</span>.
         </p>
       </div>
       <div id="schopnosti">
@@ -66,7 +64,8 @@
       <div id="aplikacia">
         <h3>Aplikácia</h3>
         <img src="images/aplikacia.png" alt="screenshot aplikácie">
-        <p>Auctor mattis viverra commodo feugiat risus, felis posuere erat. Nisl nascetur pharetra feugiat nec, conubia euismod fusce, taciti posuere interdum. Cras lectus aenean orci ligula dis, nostra sed pulvinar. Dictumst vivamus proin per enim pellentesque, augue phasellus et. Auctor mattis viverra commodo feugiat risus, felis posuere erat. Nisl nascetur pharetra feugiat nec, conubia euismod fusce, taciti posuere interdum. Cras lectus aenean orci ligula dis, nostra sed pulvinar. Dictums vivamus proin per enim pellentesque, augue phasellus et.</p>
+        <p>
+          K ovládaču bezplatne ponúkame aj aplikáciu. Jednoducho si aplikáciu spárujete s ovládačom a už Vám nič nebráni v neobmedzenom používaní. V aplikácií uvidíte pripojené zariadenia a stav batérie. Cez smartfón môžete ovládať zariadenia aj bez ovládača. Táto špecíalna verzia aplikácie príde v balení s ovládačom v podobe QR kódu. Ovládanie je veľmi intuitívne a zvládne ho úplne každý. Cez aplikáciu si budete budete môcť svoj ovládač upravovať. Napríklad meniť farbu podsvietenia tlačidiel a touchpadu, ako aj samotnú silu podsvietenia. Takže Váš ovládač bude nielen veľmi užitočný ale aj štýlový.        </p>
       </div>
       <div id="app_photo"></div>
     </div>
@@ -113,7 +112,7 @@
       </div>
       <div class="formular">
         <form>
-          <label for="email">Email</label>
+          <label>Email</label>
           <input type="text" name="email" placeholder="váš email">
           <input type="submit" value="Send">
         </form>
@@ -124,6 +123,11 @@
     </div>
     </div>
     <div id="map"></div>
+
+    <footer id="pata">
+      <a href="#header">Späť hore</a>
+      <p>© 2017 Lukáš Peťko a Tomáš Letanovský</p>
+    </footer>
 
     <script src="js/jquery-2.2.4.min.js"> </script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
